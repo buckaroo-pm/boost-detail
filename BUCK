@@ -5,6 +5,7 @@ prebuilt_cxx_library(
   exported_headers = subdir_glob([
     ('include/boost', '**/*.hpp'), 
   ]), 
+  deps = [
     'buckaroo.github.buckaroo-pm.boost-config//:config', 
     'buckaroo.github.buckaroo-pm.boost-type_traits//:type-traits', 
   ], 
